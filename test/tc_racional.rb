@@ -18,7 +18,7 @@ class Test_Fraccion < Test::Unit::TestCase
 	   assert_equal("(6/3)", (@test1 * @test2).to_s)
 	   assert_equal("(36/9)", (@test2 / @test3).to_s)
 	   assert_equal("(15/6)", (@test2 + @test3).to_s)
-	   assert_equal("(-3/3)", (@test1 - @test3).to_s)
+	   assert_equal("(-3/3)", (@test1 - @test2).to_s)
 	end
 
 end
