@@ -12,7 +12,7 @@ class Test_Fraccion < Test::Unit::TestCase
 	end
 	
 	def test_simple
-	   assert_equal("(1/1)", @test1.to_s)
+	   assert_equal("(1/0)", @test1.to_s)
 	   assert_equal("(6/3)", @test2.to_s)
 	   assert_equal("(3/6)", @test3.to_s)
 	   assert_equal("(6/3)", (@test1 * @test2).to_s)

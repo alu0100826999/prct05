@@ -35,7 +35,7 @@ class Fraccion
 
 	def -(fraccion)	
 		aux = mcm(@den, fraccion.den)
-		Fraccion.new(((@num * (aux/@den)) - (fraccion.num * (aux/fraccion.den)), aux)
+		Fraccion.new((@num * (aux/@den)) - (fraccion.num * (aux/fraccion.den)), aux)
 	end
 
 	def *(fraccion)		#metodo para multiplicar fracciones
