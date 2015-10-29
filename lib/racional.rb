@@ -30,30 +30,20 @@ class Fraccion
 	#Operaciones aritmeticas
 	def +(fraccion)
 		aux = mcm(@den, fraccion.den)	#mcm de los denominadores
-		resultado = Fraccion.new(((@num * (aux/@den)) + (fraccion.num * (aux/fraccion.den)), aux)
-		simplificar(resultado)
-			
+		Fraccion.new((@num * (aux/@den)) + (fraccion.num * (aux/fraccion.den)), aux)
 	end
 
 	def -(fraccion)	
 		aux = mcm(@den, fraccion.den)
-		resultado = Fraccion.new(((@num * (aux/@den)) - (fraccion.num * (aux/fraccion.den)), aux)
-		simplificar(resultado)
+		Fraccion.new(((@num * (aux/@den)) - (fraccion.num * (aux/fraccion.den)), aux)
 	end
 
 	def *(fraccion)		#metodo para multiplicar fracciones
-		resultado = Fraccion.new(@num * fraccion.num, @den * fraccion.den)
-		simplificar(resultado)
+		Fraccion.new(@num * fraccion.num, @den * fraccion.den)
 	end
 
 	def /(fraccion)
-		resultado = Fraccion.new(@num * fraccion.den, @den * fraccion.num)
-		simplificar(resultado)
-	end
-	
-	def simplificar(fraccion)
-		aux = gcd(fraccion.num, fraccion.den)
-		Fraccion.new(fraccion.num/aux, fraccion.den/aux)
+		Fraccion.new(@num * fraccion.den, @den * fraccion.num)
 	end
 	
 

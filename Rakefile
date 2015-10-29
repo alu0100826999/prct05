@@ -1,11 +1,11 @@
 task :default => :tu
 
-desc "Pruebas Unitarias de la clase Fraccion"
+desc "Pruebas unitarias de la clase Point"
 task :tu do
-    sh "ruby -I. test/tc_racional.rb"
+  sh "ruby -I. test/tc_racional.rb"
 end
 
 desc "Ejecutar solo las pruebas simples"
 task :simple do
-    sh "ruby -I. test/tc_racional.rb -n /simple/"
+  sh "ruby -I. test/tc_racional.rb -n /simple/"
 end
