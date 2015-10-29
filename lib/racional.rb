@@ -9,7 +9,7 @@ class Fraccion
 	end
 
 	def to_s	#metodo para convertir los objetos a cadena
-		"(#{@num}/#{@den})"
+		"(#{@num}/#{@den})"	#num/den
 	end
 
 	#Maximo Comun Divisor
